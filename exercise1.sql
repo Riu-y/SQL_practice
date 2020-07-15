@@ -534,3 +534,59 @@ HAVING sum(price) > (
   WHERE items.name = "グレーパーカー"
 )
 ;
+
+-- studentsテーブルにデータを追加してください。
+INSERT INTO students (name, course) VALUES ('Kate', 'Java');
+
+-- 下記のクエリは消さないでください。
+select * from students;
+
+
+UPDATE students
+SET name = "Jordan", course = "HTML"
+WHERE id = 6;
+
+-- 下記のクエリは消さないでください。
+SELECT * FROM students WHERE id=6;
+
+DELETE FROM students
+WHERE id = 7;
+
+SELECT * FROM students;
+
+-- studentsテーブルにnameをKaty、courseをHTMLとしたレコードを追加してください。
+INSERT INTO students(name, course)
+VALUES('Katy', 'HTML');
+
+-- studentsテーブルのidカラムの値が6のレコードのnameをJuliet、courseをRubyに更新してください。
+UPDATE students
+SET name = "Juliet", course = "Ruby"
+WHERE id = 6;
+
+-- studentsテーブルのidカラムの値が2のレコードを削除してください。
+DELETE FROM students
+WHERE id = 2;
+
+-- 下記のクエリは消さないでください。
+SELECT * FROM students;
+
+
+MYSQLコマンド
+
+データベースの確認
+SHOW database;
+
+データベースの作成
+CREATE DATABASE progate;
+
+テーブルの作成
+データベースの作成
+USE progate
+
+テーブルの作成
+CREATE TABLE users (id INT AUTO_INCREMENT, name TEXT, PRIMARY KEY (id));
+
+テーブル構造の確認
+DESCRIBE users;
+
+
